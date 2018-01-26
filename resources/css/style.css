@@ -1,5 +1,5 @@
 header {
-	display: flex;
+	display: inline-flex;
     align-items: center;
     position: fixed;
     z-index: 1;
@@ -12,11 +12,20 @@ header {
     font-weight: bold;
 }
 
+div {
+	border: 1px solid black;
+}
+
+p {
+	display: block;
+}
+
 .logo {
 	display: flex;
 	align-items: center;
 	flex-grow: 1;
 	padding-left: 30px;
+	border: 1px solid black;
 }
 
 .logo span {
@@ -44,4 +53,29 @@ nav span {
 
 body {
 	margin: 0;
+}
+
+.container {
+	display: flex;
+	position: relative;
+	top: 90px;
+	width: 100%;
+}
+
+.column.large {
+	display: block;
+	width: 630px;
+	border: 1px solid black;
+}
+
+.column.medium {
+	display: block;
+	width: 300px;
+	border: 1px solid black;
+}
+
+.column.small {
+	display: block;
+	width: 240px;
+	border: 1px solid black;
 }
